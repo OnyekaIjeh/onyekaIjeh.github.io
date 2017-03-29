@@ -20,6 +20,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/contact.js"></script>
+			<script src="assets/js/vue.js"></script>
+			<script src="assets/js/vue-contact.js"></script>
 
 <!-- Facebook OpenGraph -->
 
@@ -160,7 +162,7 @@
 									</div>
 									<ul class="actions">										
 									<input type="hidden" name="_subject" value="Feedback from onyeka.name.ng" />
-										<li><input type="submit" value="Send Message" class="special" id="contact-form-submit"/></li>
+										<li><input @onclick="send()" type="submit" value="Send Message" class="special" id="contact-form-submit"/></li>
 										<!-- <li><input type="reset" value="Reset" /></li> -->
 									</ul>
 								</form>

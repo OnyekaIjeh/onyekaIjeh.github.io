@@ -75,6 +75,7 @@
 <ul class="icons">
 									<li><a href="https://twitter.com/OnyekaIjeh" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://facebook.com/YekaIjeh" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/OnyekaIjeh" class="icon fa-github"><span class="label">GitHub</span></a></li>
 			<!--						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> 
 									<li><a href="github.com/OnyekaIjeh" class="icon fa-github"><span class="label">GitHub</span></a></li> -->
 								</ul>
@@ -87,6 +88,7 @@
 								<li><a href="#elements">Elements</a></li>      -->   
 								<li><a href="/">Home</a></li>
 								<li><a href="#about">About Me</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
 							<!--	<li><a href="blog">Blog</a></li>  -->
 							<!--	<li><a href="#contact">Contact Me</a></li> -->
 
@@ -128,6 +130,42 @@
 								<p>I love to teach when I can, a public speaker (spoke at TECH101 - an event organised to enligthen students on how to be productive with their devices).</p></br>
 								<p>Feel free to reach out to me on Social Media let's talk about anything!</p>
 								
+								</article>
+
+							<!-- Portfolio -->
+							<article id="portfolio">
+								<h2 class="major">Portfolio <a href="https://github.com/OnyekaIjeh" class="icon fa-github"><span class="label">GitHub</span></a></h2>
+
+
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+							<li>	<p>A backend built using laravel to manage news posts and event entries.</p>
+								<p>Link: <a href="https://github.com/OnyekaIjeh/laravel-newsposts">Laravel News Posts</a></p></li>
+
+								</br>
+
+							<li>	<p>An e-commerce site built using OpenCart and Paystack for payments</p>
+								<p>Link: <a href="https://jogo.ng">Jogo</a></p></li>
+
+								</br>
+
+
+							<li>	<p>A countdown timer using Vue.js (Javascript framework)</p>
+								<p>Link: <a href="https://github.com/OnyekaIjeh/vue-countdown">Vue Countdown</a></p></li>
+
+								</br>			
+
+
+							<li>	<p>A password stregth checker using Vue.js and zxcvbn</p>
+								<p>Link: <a href="https://github.com/OnyekaIjeh/vue-zxcvbn">Vue Password Strength Checker</a></p></li>
+
+								</br>
+
+
+							<li>	<p>A contact form implementation using Vue.js</p> </li>
+
+								</br>
+
+
 								</article>
 
 						<!-- Contact 

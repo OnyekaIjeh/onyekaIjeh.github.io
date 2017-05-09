@@ -14,14 +14,6 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-<!-- JS Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/contact.js"></script>
-			<script src="assets/js/vue.js"></script>
-			<script src="assets/js/vue-contact.js"></script>
 
 <!-- Facebook OpenGraph -->
 
@@ -80,6 +72,12 @@
 								<h1>Onyeka Ijeh</h1>
 								<p><!--[-->Aspiring Web Developer based in Nigeria.<!--]--></p>
 							</div>
+<ul class="icons">
+									<li><a href="https://twitter.com/OnyekaIjeh" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://facebook.com/YekaIjeh" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<!--						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> 
+									<li><a href="github.com/OnyekaIjeh" class="icon fa-github"><span class="label">GitHub</span></a></li> -->
+								</ul>
 						</div>
 						<nav>
 							<ul>
@@ -90,7 +88,7 @@
 								<li><a href="/">Home</a></li>
 								<li><a href="#about">About Me</a></li>
 							<!--	<li><a href="blog">Blog</a></li>  -->
-								<li><a href="#contact">Contact Me</a></li>
+							<!--	<li><a href="#contact">Contact Me</a></li> -->
 
 							</ul>
 						</nav>
@@ -128,45 +126,45 @@
 								<p>I code mainly in PHP, but I'm relearning the basics of programming while diversifying mainly into Javascript technologies in building Web Applications.</p></br>
 								<p>I just started learning Node.js and I plan to share my journey with you guys on my blog.</p></br>
 								<p>I love to teach when I can, a public speaker (spoke at TECH101 - an event organised to enligthen students on how to be productive with their devices).</p></br>
-								<p>Feel free to reach out to me on Social Media or through the Contact form let's talk about anything!</p>
+								<p>Feel free to reach out to me on Social Media let's talk about anything!</p>
 								
 								</article>
 
-						<!-- Contact -->
+						<!-- Contact 
 							<article id="contact">
 								<h2 class="major">Contact Me</h2>
 								<p>Follow me on Social Media</p>
 								<ul class="icons">
 									<li><a href="https://twitter.com/OnyekaIjeh" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://facebook.com/YekaIjeh" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-			<!--						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> 
-									<li><a href="github.com/OnyekaIjeh" class="icon fa-github"><span class="label">GitHub</span></a></li> -->
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> 
+									<li><a href="github.com/OnyekaIjeh" class="icon fa-github"><span class="label">GitHub</span></a></li> 
 								</ul>
 
 								
 								<p>Send me a message</p>
-								<div id="response"></div>
+								<div v-if="feedback"><p><b>{{feedback}}<b/></p></br></div>
 						
-								<form id="contact-form" action="https://formspree.io/freebrowsingadmin@gmail.com">
+								<form id="contact-form" action="https://formspree.io/hello@onyeka.name.ng">
 									<div class="field half first">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" autocomplete required/>
+										<input type="text" name="name" id="name" v-model="formdata.name" autocomplete required/>
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" autocomplete required/>
+										<input type="email" name="email" id="email" v-model="formdata.email" autocomplete required/>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+										<textarea name="message" id="message" rows="4" v-model="formdata.comment"></textarea>
 									</div>
 									<ul class="actions">										
 									<input type="hidden" name="_subject" value="Feedback from onyeka.name.ng" />
-										<li><input @onclick="send()" type="submit" value="Send Message" class="special" id="contact-form-submit"/></li>
-										<!-- <li><input type="reset" value="Reset" /></li> -->
+										<li><input type="submit" value="Send Message" class="special" id="submitButton" @click.prevent="sendtoformspree()"/></li>
+										 <li><input type="reset" value="Reset" /></li> 
 									</ul>
 								</form>
-							</article>
+							</article> -->
 
 						<!-- Elements 
 							<article id="elements">
@@ -433,6 +431,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						  ga('send', 'pageview');
 
 			</script>
+			<!-- JS Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   			<script src="https://unpkg.com/vue"></script>
+			<script src="assets/js/vue-contact.js"></script>
 
 	</body>
 </html>

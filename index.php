@@ -155,7 +155,7 @@
 								</br>			
 
 
-							<li>	<p>A password stregth checker using Vue.js and zxcvbn</p>
+							<li>	<p>A password strength checker using Vue.js and zxcvbn</p>
 								<p>Link: <a href="https://github.com/OnyekaIjeh/vue-zxcvbn">Vue Password Strength Checker</a></p></li>
 
 								</br>

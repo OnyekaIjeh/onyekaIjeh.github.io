@@ -77,10 +77,6 @@ a:hover, a:focus {
 	border-bottom: 1px solid grey;
 }
 
-.header-img {
-	border-radius: 3px;
-}
-
 footer {
 	position: fixed;
 	bottom: -25px;

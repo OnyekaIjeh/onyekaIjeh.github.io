@@ -1,113 +1,110 @@
-
 @-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-moz-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn {
-	from {
-		opacity: 0;}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
-	background-color: black;
-	width: 100%;
-	color: grey;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
-	margin: auto;
+  background-color: black;
+  width: 100%;
+  color: grey;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: auto;
 
-	opacity: 0;
-	
-	-webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation: fadeIn ease-in 1;
-	animation: fadeIn ease-in 1;
-	
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-  
-	-webkit-animation-duration: 3s;
-	-moz-animation-duration: 3s;
-	animation-duration: 3s;
+  opacity: 0;
 
+  -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
 }
 
 img {
-	max-width: 100%;
-	opacity: 0.5;
+  max-width: 100%;
+  opacity: 0.5;
 }
 
 li {
-	display: inline-block;
-	margin: 1vw;
+  display: inline-block;
+  margin: 1vw;
 }
 
 .content {
-	margin: 25px;
+  margin: 25px;
 }
 
 .heading {
-	font-family: 'Lora', serif;
-
+  font-family: "Lora", serif;
 }
 
 .icons {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 a {
-	outline: none;
-	text-decoration: none;
+  outline: none;
+  text-decoration: none;
 }
 
-a:hover, a:focus {	
-	border-bottom: 1px solid grey;
+a:hover,
+a:focus {
+  border-bottom: 1px solid grey;
 }
 
 footer {
-	position: fixed;
-	bottom: -25px;
-	width: 100%;
-	text-align: center;
-	font-style: italic;
-	font-size: small;
+  position: fixed;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: small;
 }
 
 .about {
-	max-width: 400px;
-	margin: auto;
-	text-align: left;
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
 }
 .blue {
-	color: #1EAEDB;
+  color: #1eaedb;
 }
 
-.white{
-	color: white;
+.white {
+  color: white;
 }
 
 .highlight {
-	background-color: white;
+  background-color: white;
 }
 
 h6.sub-heading {
-
-          font-size : 2vw;
-
-} 
+  font-size: 1.5vw;
+}

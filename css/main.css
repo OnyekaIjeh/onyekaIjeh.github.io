@@ -72,11 +72,12 @@ li {
 a {
   outline: none;
   text-decoration: none;
+  border-bottom: 1px solid grey;
 }
 
 a:hover,
 a:focus {
-  border-bottom: 1px solid grey;
+  font-size: 16px;  
 }
 
 footer {
